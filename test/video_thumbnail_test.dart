@@ -3,19 +3,24 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:video_thumbnail/video_thumbnail.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('video_thumbnail');
+  TestWidgetsFlutterBinding.ensureInitialized();
+
+  const MethodChannel channel =
+      MethodChannel('plugins.justsoft.xyz/video_thumbnail');
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(channel, (MethodCall methodCall) async {
       final m = methodCall.method;
       final a = methodCall.arguments;
 
-      return '$m=${a["video"]}:${a["path"]}:${a["format"]}:${a["maxhow"]}:${a["quality"]}';
+      return '$m=${a["video"]}:${a["path"]}:${a["format"]}:${a["maxw"]}:${a["quality"]}';
     });
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(channel, null);
   });
 
   test('thumbnailData', () async {

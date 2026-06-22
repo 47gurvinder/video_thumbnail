@@ -1,34 +1,20 @@
-def localProperties = new Properties()
-def localPropertiesFile = rootProject.file('local.properties')
-if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader('UTF-8') { reader ->
-        localProperties.load(reader)
-    }
+plugins {
+    id "com.android.application"
+    id "dev.flutter.flutter-gradle-plugin"
 }
-
-def flutterRoot = localProperties.getProperty('flutter.sdk')
-if (flutterRoot == null) {
-    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
-}
-
-def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-if (flutterVersionCode == null) {
-    flutterVersionCode = '1'
-}
-
-def flutterVersionName = localProperties.getProperty('flutter.versionName')
-if (flutterVersionName == null) {
-    flutterVersionName = '1.0'
-}
-
-apply plugin: 'com.android.application'
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 29
+    namespace 'xyz.justsoft.video_thumbnail_example'
+    compileSdk 36
+    ndkVersion "28.2.13676358"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     lintOptions {
@@ -38,10 +24,10 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "xyz.justsoft.video_thumbnail_example"
-        minSdkVersion 16
-        targetSdkVersion 29
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 36
+        versionCode flutter.versionCode
+        versionName flutter.versionName
     }
 
     buildTypes {
@@ -55,7 +41,4 @@ android {
 
 flutter {
     source '../..'
-}
-
-dependencies {
 }
