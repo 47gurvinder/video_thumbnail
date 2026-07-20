@@ -2,8 +2,6 @@
 
 * Rename the maintained fork to `video_thumbnail_gdx_plus`.
 * Update package metadata, documentation, imports, example, and iOS podspec for the new package name.
-* Preserve the original MIT license, copyright, contributor credits, and project history.
-* Add Gurwinder Singh as the maintainer and point support links to the maintained repository.
 * Add pub.dev topics, including `gdx`.
 * Increase the Gradle heap limit for compatibility with current Flutter Android builds.
 

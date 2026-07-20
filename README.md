@@ -7,9 +7,7 @@ This maintained fork of [`video_thumbnail`](https://pub.dev/packages/video_thumb
 
 ![video-file](video_file.png) ![video-url](video_url.png)
 
-## Maintenance and credits
-
-Maintained by [Gurwinder Singh](https://github.com/47gurvinder) ([47gurvinder@gmail.com](mailto:47gurvinder@gmail.com)). Source code, issues, and contributions are hosted in the [maintained repository](https://github.com/47gurvinder/video_thumbnail).
+## Acknowledgements
 
 This package is based on the original [`justsoft/video_thumbnail`](https://github.com/justsoft/video_thumbnail) project created by John Zhong. Credit remains with John Zhong and all original contributors. See [NOTICE](NOTICE), [LICENSE](LICENSE), and the preserved changelog for attribution and licensing details. This fork is independently maintained and is not presented as an official release of the original project.
 
@@ -75,3 +73,21 @@ final fileName = await VideoThumbnail.thumbnailFile(
 
 ## Notes
 Issues and pull requests are welcome in the maintained repository. WebP thumbnail generation using libwebp on iOS may have a performance cost.
+
+## Need help or a custom solution?
+
+Need help integrating this package, maintaining an existing Flutter project, or building a custom web, mobile, or AI solution? Get in touch to discuss your requirements:
+
+- [Contact Gurwinder DevX](https://gurwinderdevx.com/)
+- [Hire me on Upwork](https://www.upwork.com/freelancers/gurwinderdevx)
+
+## Author and support
+
+Maintained by **Gurwinder Singh**, a full-stack web and mobile application developer and founder of [Gurwinder DevX](https://gurwinderdevx.com/).
+
+- [GitHub](https://github.com/47gurvinder)
+- [LinkedIn](https://www.linkedin.com/in/gurwinderdevx/)
+- [Upwork](https://www.upwork.com/freelancers/gurwinderdevx)
+- [Buy Me a Coffee](https://buymeacoffee.com/gurwinderdevx)
+
+If this package helps your project, consider supporting its continued development through Buy Me a Coffee.

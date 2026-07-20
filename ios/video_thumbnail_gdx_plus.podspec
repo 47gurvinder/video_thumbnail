@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A maintained fork of video_thumbnail for generating image thumbnails on iOS.
                        DESC
-  s.homepage         = 'https://github.com/47gurvinder/video_thumbnail'
+  s.homepage         = 'https://gurwinderdevx.com/'
   s.license          = { :file => '../LICENSE' }
   s.author           = {
-    'Gurwinder Singh' => '47gurvinder@gmail.com',
+    'Gurwinder Singh' => 'contact@gurwinderdevx.com',
     'John Zhong and original contributors' => 'john138@gmail.com'
   }
   s.source           = { :path => '.' }
