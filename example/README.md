@@ -1,16 +1,17 @@
-# video_thumbnail_example
+# video_thumbnail_gdx_plus example
 
-Demonstrates how to use the [video_thumbnail](https://pub.dev/packages/video_thumbnail) plugin.
+Demonstrates how to use the [video_thumbnail_gdx_plus](https://pub.dev/packages/video_thumbnail_gdx_plus) plugin maintained by [Gurwinder Singh](https://github.com/47gurvinder).
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+From the package root, run:
 
-A few resources to get you started if this is your first Flutter project:
+```sh
+cd example
+flutter pub get
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The app can generate thumbnails from its default video URL or a video selected from the device.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+See the [package README](../README.md) for API usage, credits, and license information.

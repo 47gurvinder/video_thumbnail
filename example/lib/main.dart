@@ -1,10 +1,14 @@
+// Radio.groupValue and Radio.onChanged keep this example compatible with the
+// package's Flutter >=3.3.0 constraint. Newer Flutter releases prefer RadioGroup.
+// ignore_for_file: deprecated_member_use
+
 import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'dart:io';
 
-import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:video_thumbnail_gdx_plus/video_thumbnail_gdx_plus.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -321,7 +325,7 @@ class _DemoHomeState extends State<DemoHome> {
     ];
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Thumbnail Plugin example'),
+          title: const Text('video_thumbnail_gdx_plus example'),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -384,8 +388,8 @@ class _DemoHomeState extends State<DemoHome> {
           children: <Widget>[
             FloatingActionButton(
               onPressed: () async {
-                final video = await ImagePicker()
-                    .pickVideo(source: ImageSource.camera);
+                final video =
+                    await ImagePicker().pickVideo(source: ImageSource.camera);
                 if (video == null) return;
                 setState(() {
                   _video.text = video.path;
@@ -399,8 +403,8 @@ class _DemoHomeState extends State<DemoHome> {
             ),
             FloatingActionButton(
               onPressed: () async {
-                final video = await ImagePicker()
-                    .pickVideo(source: ImageSource.gallery);
+                final video =
+                    await ImagePicker().pickVideo(source: ImageSource.gallery);
                 if (video == null) return;
                 setState(() {
                   _video.text = video.path;

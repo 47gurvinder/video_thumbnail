@@ -1,6 +1,6 @@
-name: video_thumbnail_example
-description: Demonstrates how to use the video_thumbnail plugin.
-version: 0.1.7
+name: video_thumbnail_gdx_plus_example
+description: Demonstrates how to use the video_thumbnail_gdx_plus plugin.
+version: 0.1.0
 publish_to: 'none'
 
 environment:
@@ -13,7 +13,7 @@ dependencies:
 
   image_picker: ^1.1.2
   path_provider: ^2.1.4
-  video_thumbnail:
+  video_thumbnail_gdx_plus:
     path: ../
 
 dev_dependencies:

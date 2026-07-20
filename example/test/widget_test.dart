@@ -1,29 +1,34 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility that Flutter provides. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-//import 'package:flutter/material.dart';
-//import 'package:flutter_test/flutter_test.dart';
-
-//import 'package:video_thumbnail_example/main.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:video_thumbnail_gdx_plus_example/main.dart';
 
 void main() {
-  /*
-  testWidgets('Verify Platform version', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  TestWidgetsFlutterBinding.ensureInitialized();
 
-    // Verify that platform version is retrieved.
-    expect(
-      find.byWidgetPredicate(
-        (Widget widget) => widget is Text &&
-                           widget.data.startsWith('Running on:'),
-      ),
-      findsOneWidget,
-    );
+  const pathProviderChannel = MethodChannel('plugins.flutter.io/path_provider');
+
+  setUp(() {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(pathProviderChannel, (call) async {
+      if (call.method == 'getTemporaryDirectory') {
+        return '/tmp';
+      }
+      return null;
+    });
   });
-  */
+
+  tearDown(() {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(pathProviderChannel, null);
+  });
+
+  testWidgets('example app starts with the renamed package title',
+      (tester) async {
+    await tester.pumpWidget(MyApp());
+    await tester.pump();
+
+    expect(find.text('video_thumbnail_gdx_plus example'), findsOneWidget);
+    expect(find.text('Data'), findsOneWidget);
+    expect(find.text('File'), findsOneWidget);
+  });
 }

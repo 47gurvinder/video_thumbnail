@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:video_thumbnail_gdx_plus/video_thumbnail_gdx_plus.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

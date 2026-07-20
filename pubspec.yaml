@@ -1,10 +1,24 @@
-name: video_thumbnail
-description: A flutter plugin for creating a thumbnail from a local video file or from a video URL.
-version: 0.5.6
-# author: John Zhong <john138@gmail.com>, Tairs Rzajevs <tairs.rzayevs@chi.lv>, Grigori <jlavyan@gmail.com>, Hafeez Ahmed <hahmed@fusionsd.com.au>, Leynier <leynier41@gmail.com>, Andreas Petrov, julek-kal, Nils Reichardt, Ajb Coder 
-homepage: https://github.com/justsoft
-repository: https://github.com/justsoft/video_thumbnail
-issue_tracker: https://github.com/justsoft/video_thumbnail/issues
+name: video_thumbnail_gdx_plus
+description: A maintained Flutter plugin for creating image thumbnails from local video files or video URLs on Android and iOS.
+version: 0.5.6+1
+# Maintainer: Gurwinder Singh <47gurvinder@gmail.com>
+# Originally created by John Zhong and contributors. See NOTICE and LICENSE.
+homepage: https://github.com/47gurvinder/video_thumbnail
+repository: https://github.com/47gurvinder/video_thumbnail
+issue_tracker: https://github.com/47gurvinder/video_thumbnail/issues
+
+topics:
+  - video
+  - thumbnail
+  - flutter-plugin
+  - media
+  - gdx
+
+screenshots:
+  - description: Generate a thumbnail from a local video file.
+    path: video_file.png
+  - description: Generate a thumbnail from a video URL.
+    path: video_url.png
 
 environment:
   sdk: '>=3.0.0 <4.0.0'

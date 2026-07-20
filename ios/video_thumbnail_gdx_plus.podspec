@@ -2,15 +2,18 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'video_thumbnail'
-  s.version          = '0.0.1'
-  s.summary          = 'A new flutter plugin project.'
+  s.name             = 'video_thumbnail_gdx_plus'
+  s.version          = '0.5.6'
+  s.summary          = 'Generate image thumbnails from local video files or video URLs.'
   s.description      = <<-DESC
-A new flutter plugin project.
+A maintained fork of video_thumbnail for generating image thumbnails on iOS.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/47gurvinder/video_thumbnail'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = {
+    'Gurwinder Singh' => '47gurvinder@gmail.com',
+    'John Zhong and original contributors' => 'john138@gmail.com'
+  }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
@@ -22,4 +25,3 @@ A new flutter plugin project.
 
   s.ios.deployment_target = '12.0'
 end
-

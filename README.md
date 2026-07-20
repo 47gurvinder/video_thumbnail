@@ -1,11 +1,17 @@
-# video_thumbnail
+# video_thumbnail_gdx_plus
 
-This plugin generates image thumbnails from video files or URLs on both Android and iOS. It returns an image in memory or saves it as a file with customizable format, resolution, and quality.
+This maintained fork of [`video_thumbnail`](https://pub.dev/packages/video_thumbnail) generates image thumbnails from video files or URLs on Android and iOS. It returns an image in memory or saves it as a file with customizable format, resolution, and quality.
 
-  [![pub ver](https://img.shields.io/badge/pub-v0.5.6-blue)](https://pub.dev/packages/video_thumbnail)
-  [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/justsoft/)
+[![pub package](https://img.shields.io/pub/v/video_thumbnail_gdx_plus.svg)](https://pub.dev/packages/video_thumbnail_gdx_plus)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-![video-file](https://github.com/justsoft/video_thumbnail/blob/master/video_file.png?raw=true) ![video-url](https://github.com/justsoft/video_thumbnail/blob/master/video_url.png?raw=true)
+![video-file](video_file.png) ![video-url](video_url.png)
+
+## Maintenance and credits
+
+Maintained by [Gurwinder Singh](https://github.com/47gurvinder) ([47gurvinder@gmail.com](mailto:47gurvinder@gmail.com)). Source code, issues, and contributions are hosted in the [maintained repository](https://github.com/47gurvinder/video_thumbnail).
+
+This package is based on the original [`justsoft/video_thumbnail`](https://github.com/justsoft/video_thumbnail) project created by John Zhong. Credit remains with John Zhong and all original contributors. See [NOTICE](NOTICE), [LICENSE](LICENSE), and the preserved changelog for attribution and licensing details. This fork is independently maintained and is not presented as an official release of the original project.
 
 ## Methods
 |function|parameter|description|return|
@@ -20,14 +26,14 @@ Warning:
 ## Usage
 
 **Installing**
-add [video_thumbnail](https://pub.dev/packages/video_thumbnail) as a dependency in your pubspec.yaml file.
+Add [video_thumbnail_gdx_plus](https://pub.dev/packages/video_thumbnail_gdx_plus) as a dependency in your `pubspec.yaml` file.
 ```yaml
 dependencies:
-  video_thumbnail: ^0.5.6
+  video_thumbnail_gdx_plus: ^0.5.6+1
 ```
 **import**
 ```dart
-import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:video_thumbnail_gdx_plus/video_thumbnail_gdx_plus.dart';
 ```
 **Generate a thumbnail in memory from video file**
 ```dart
@@ -68,4 +74,4 @@ final fileName = await VideoThumbnail.thumbnailFile(
 ```
 
 ## Notes
-Fork or pull requests are always welcome. Currently it seems have a little performance issue while generating WebP thumbnail by using libwebp under iOS.
+Issues and pull requests are welcome in the maintained repository. WebP thumbnail generation using libwebp on iOS may have a performance cost.

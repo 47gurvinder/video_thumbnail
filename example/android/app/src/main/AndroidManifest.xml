@@ -15,7 +15,7 @@
 
     <application
         android:name="${applicationName}"
-        android:label="video_thumbnail_example"
+        android:label="video_thumbnail_gdx_plus example"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <activity
