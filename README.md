@@ -5,7 +5,8 @@ This maintained fork of [`video_thumbnail`](https://pub.dev/packages/video_thumb
 [![pub package](https://img.shields.io/pub/v/video_thumbnail_gdx_plus.svg)](https://pub.dev/packages/video_thumbnail_gdx_plus)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-![video-file](video_file.png) ![video-url](video_url.png)
+![Video file thumbnail example](https://raw.githubusercontent.com/justsoft/video_thumbnail/refs/heads/master/video_file.png)
+![Video URL thumbnail example](https://raw.githubusercontent.com/justsoft/video_thumbnail/refs/heads/master/video_url.png)
 
 ## Acknowledgements
 
@@ -27,7 +28,7 @@ Warning:
 Add [video_thumbnail_gdx_plus](https://pub.dev/packages/video_thumbnail_gdx_plus) as a dependency in your `pubspec.yaml` file.
 ```yaml
 dependencies:
-  video_thumbnail_gdx_plus: ^0.5.6+1
+  video_thumbnail_gdx_plus: ^0.5.7
 ```
 **import**
 ```dart

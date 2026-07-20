@@ -443,7 +443,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.5.6+1"
+    version: "0.5.7"
   vm_service:
     dependency: transitive
     description:

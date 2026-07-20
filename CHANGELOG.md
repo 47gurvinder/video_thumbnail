@@ -1,3 +1,7 @@
+## 0.5.7
+
+* Fix the README example images on pub.dev by using absolute upstream image URLs.
+
 ## 0.5.6+1
 
 * Rename the maintained fork to `video_thumbnail_gdx_plus`.
