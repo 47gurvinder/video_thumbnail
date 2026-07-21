@@ -1,6 +1,6 @@
 name: video_thumbnail_gdx_plus
 description: A maintained Flutter plugin for creating image thumbnails from local video files or video URLs on Android and iOS.
-version: 0.5.7
+version: 0.5.8
 # Originally created by John Zhong and contributors. See NOTICE and LICENSE.
 homepage: https://gurwinderdevx.com/
 repository: https://github.com/47gurvinder/video_thumbnail
@@ -46,10 +46,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: xyz.justsoft.video_thumbnail
+        package: com.gurwinderdevx.video_thumbnail_gdx_plus
         pluginClass: VideoThumbnailPlugin
       ios:
-        pluginClass: VideoThumbnailPlugin
+        pluginClass: VideoThumbnailGdxPlusPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

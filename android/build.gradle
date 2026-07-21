@@ -1,4 +1,4 @@
-group 'xyz.justsoft.video_thumbnail'
+group 'com.gurwinderdevx.video_thumbnail_gdx_plus'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'xyz.justsoft.video_thumbnail'
+    namespace 'com.gurwinderdevx.video_thumbnail_gdx_plus'
     compileSdk 36
 
     defaultConfig {

@@ -6,7 +6,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   const MethodChannel channel =
-      MethodChannel('plugins.justsoft.xyz/video_thumbnail');
+      MethodChannel('plugins.gurwinderdevx.com/video_thumbnail_gdx_plus');
 
   setUp(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger

@@ -12,7 +12,7 @@ PODS:
   - libwebp/sharpyuv (1.5.0)
   - libwebp/webp (1.5.0):
     - libwebp/sharpyuv
-  - video_thumbnail_gdx_plus (0.5.6):
+  - video_thumbnail_gdx_plus (0.5.8):
     - Flutter
     - libwebp
 
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
-  video_thumbnail_gdx_plus: c6bc8825f144a07ba878e1409ced7ec8e90b0297
+  video_thumbnail_gdx_plus: 9d0949e88ed9a936429cca481829933047d3e8d1
 
 PODFILE CHECKSUM: 5c8eb167e48255b7544ab290f70b4d6a1076ca06
 

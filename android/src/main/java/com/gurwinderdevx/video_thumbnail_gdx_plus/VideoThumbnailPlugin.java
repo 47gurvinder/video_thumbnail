@@ -1,4 +1,4 @@
-package xyz.justsoft.video_thumbnail;
+package com.gurwinderdevx.video_thumbnail_gdx_plus;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -41,7 +41,7 @@ public class VideoThumbnailPlugin implements FlutterPlugin, MethodCallHandler {
     public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
         context = binding.getApplicationContext();
         executor = Executors.newCachedThreadPool();
-        channel = new MethodChannel(binding.getBinaryMessenger(), "plugins.justsoft.xyz/video_thumbnail");
+        channel = new MethodChannel(binding.getBinaryMessenger(), "plugins.gurwinderdevx.com/video_thumbnail_gdx_plus");
         channel.setMethodCallHandler(this);
     }
 

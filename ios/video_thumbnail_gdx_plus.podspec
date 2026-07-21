@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'video_thumbnail_gdx_plus'
-  s.version          = '0.5.6'
+  s.version          = '0.5.8'
   s.summary          = 'Generate image thumbnails from local video files or video URLs.'
   s.description      = <<-DESC
 A maintained fork of video_thumbnail for generating image thumbnails on iOS.

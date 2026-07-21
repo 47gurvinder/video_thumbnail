@@ -1,3 +1,7 @@
+## 0.5.8
+
+* Give the fork unique Android and iOS plugin identifiers so it can coexist with the original `video_thumbnail` package without namespace, duplicate-class, or method-channel conflicts.
+
 ## 0.5.7
 
 * Fix the README example images on pub.dev by using absolute upstream image URLs.
